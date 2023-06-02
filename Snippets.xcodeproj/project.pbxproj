@@ -7,20 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2EFEA72A28EE14005479F2 /* MaxWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EFEA62A28EE14005479F2 /* MaxWidth.swift */; };
+		EB2EFEA92A290353005479F2 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EFEA82A290353005479F2 /* Overlay.swift */; };
 		EB3520AF2A0252F30011350D /* SnippetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3520AE2A0252F30011350D /* SnippetsApp.swift */; };
 		EB3520B12A0252F30011350D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3520B02A0252F30011350D /* ContentView.swift */; };
 		EB3520B32A0252F60011350D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3520B22A0252F60011350D /* Assets.xcassets */; };
 		EB3520B62A0252F60011350D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3520B52A0252F60011350D /* Preview Assets.xcassets */; };
 		EB3520BE2A0254640011350D /* Example1Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3520BD2A0254640011350D /* Example1Timer.swift */; };
+		EB729FE32A20BD2E00227DB5 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB729FE22A20BD2E00227DB5 /* Feature.swift */; };
+		EB729FE52A22570A00227DB5 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB729FE42A22570900227DB5 /* OnboardingContentView.swift */; };
+		EB729FE72A23AB8700227DB5 /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB729FE62A23AB8600227DB5 /* OnboardingContainerView.swift */; };
+		EBE0D66D2A126DBF0081FCE1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D66C2A126DBF0081FCE1 /* Theme.swift */; };
+		EBE0D66F2A1270BD0081FCE1 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D66E2A1270BD0081FCE1 /* ThemeView.swift */; };
+		EBE0D6712A127B020081FCE1 /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D6702A127B020081FCE1 /* ThemePickerView.swift */; };
+		EBE0D6762A13BE450081FCE1 /* ColorAsAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D6752A13BE450081FCE1 /* ColorAsAView.swift */; };
+		EBE0D6782A13E2710081FCE1 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D6772A13E2710081FCE1 /* ThemePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB2EFEA62A28EE14005479F2 /* MaxWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxWidth.swift; sourceTree = "<group>"; };
+		EB2EFEA82A290353005479F2 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
 		EB3520AB2A0252F30011350D /* Snippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3520AE2A0252F30011350D /* SnippetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetsApp.swift; sourceTree = "<group>"; };
 		EB3520B02A0252F30011350D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB3520B22A0252F60011350D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB3520B52A0252F60011350D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB3520BD2A0254640011350D /* Example1Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1Timer.swift; sourceTree = "<group>"; };
+		EB729FE22A20BD2E00227DB5 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		EB729FE42A22570900227DB5 /* OnboardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
+		EB729FE62A23AB8600227DB5 /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		EBE0D66C2A126DBF0081FCE1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		EBE0D66E2A1270BD0081FCE1 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		EBE0D6702A127B020081FCE1 /* ThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerView.swift; sourceTree = "<group>"; };
+		EBE0D6742A1385D20081FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EBE0D6752A13BE450081FCE1 /* ColorAsAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsAView.swift; sourceTree = "<group>"; };
+		EBE0D6772A13E2710081FCE1 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +74,8 @@
 		EB3520AD2A0252F30011350D /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				EBE0D6742A1385D20081FCE1 /* Info.plist */,
+				EBE0D66B2A126DAC0081FCE1 /* Models */,
 				EB3520BC2A0254250011350D /* Views */,
 				EB3520AE2A0252F30011350D /* SnippetsApp.swift */,
 				EB3520B02A0252F30011350D /* ContentView.swift */,
@@ -73,9 +96,34 @@
 		EB3520BC2A0254250011350D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB729FE82A23AE8C00227DB5 /* Onboarding */,
 				EB3520BD2A0254640011350D /* Example1Timer.swift */,
+				EBE0D66E2A1270BD0081FCE1 /* ThemeView.swift */,
+				EBE0D6702A127B020081FCE1 /* ThemePickerView.swift */,
+				EBE0D6752A13BE450081FCE1 /* ColorAsAView.swift */,
+				EBE0D6772A13E2710081FCE1 /* ThemePicker.swift */,
+				EB2EFEA62A28EE14005479F2 /* MaxWidth.swift */,
+				EB2EFEA82A290353005479F2 /* Overlay.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EB729FE82A23AE8C00227DB5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EB729FE42A22570900227DB5 /* OnboardingContentView.swift */,
+				EB729FE62A23AB8600227DB5 /* OnboardingContainerView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EBE0D66B2A126DAC0081FCE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB729FE22A20BD2E00227DB5 /* Feature.swift */,
+				EBE0D66C2A126DBF0081FCE1 /* Theme.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +197,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3520BE2A0254640011350D /* Example1Timer.swift in Sources */,
+				EBE0D66D2A126DBF0081FCE1 /* Theme.swift in Sources */,
+				EB729FE32A20BD2E00227DB5 /* Feature.swift in Sources */,
+				EB2EFEA72A28EE14005479F2 /* MaxWidth.swift in Sources */,
+				EB729FE52A22570A00227DB5 /* OnboardingContentView.swift in Sources */,
+				EBE0D6762A13BE450081FCE1 /* ColorAsAView.swift in Sources */,
+				EB729FE72A23AB8700227DB5 /* OnboardingContainerView.swift in Sources */,
+				EBE0D6712A127B020081FCE1 /* ThemePickerView.swift in Sources */,
 				EB3520B12A0252F30011350D /* ContentView.swift in Sources */,
+				EBE0D6782A13E2710081FCE1 /* ThemePicker.swift in Sources */,
+				EBE0D66F2A1270BD0081FCE1 /* ThemeView.swift in Sources */,
+				EB2EFEA92A290353005479F2 /* Overlay.swift in Sources */,
 				EB3520AF2A0252F30011350D /* SnippetsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +340,7 @@
 				DEVELOPMENT_TEAM = 48SFJ53X29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Snippets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -311,7 +369,7 @@
 				DEVELOPMENT_TEAM = 48SFJ53X29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Snippets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
