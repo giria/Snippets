@@ -61,6 +61,17 @@ struct ContentView: View {
                     } label: {
                         Text("Overlay and aligmnentt")
                     }
+                    NavigationLink {
+                        OpenCounter()
+                    } label: {
+                        Text("Number of times app opened")
+                    }
+                    
+                    NavigationLink {
+                        ScrollListView()
+                    } label: {
+                        Text("Scroll a List")
+                    }
                     
                     
                    

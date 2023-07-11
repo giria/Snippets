@@ -11,12 +11,14 @@
 		EB2EFEA92A290353005479F2 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EFEA82A290353005479F2 /* Overlay.swift */; };
 		EB3520AF2A0252F30011350D /* SnippetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3520AE2A0252F30011350D /* SnippetsApp.swift */; };
 		EB3520B12A0252F30011350D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3520B02A0252F30011350D /* ContentView.swift */; };
-		EB3520B32A0252F60011350D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3520B22A0252F60011350D /* Assets.xcassets */; };
 		EB3520B62A0252F60011350D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3520B52A0252F60011350D /* Preview Assets.xcassets */; };
 		EB3520BE2A0254640011350D /* Example1Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3520BD2A0254640011350D /* Example1Timer.swift */; };
+		EB50E6A72A4DCDBA008E6FEB /* OpenCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50E6A62A4DCDBA008E6FEB /* OpenCounter.swift */; };
+		EB50E6A82A51E2AB008E6FEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3520B22A0252F60011350D /* Assets.xcassets */; };
 		EB729FE32A20BD2E00227DB5 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB729FE22A20BD2E00227DB5 /* Feature.swift */; };
 		EB729FE52A22570A00227DB5 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB729FE42A22570900227DB5 /* OnboardingContentView.swift */; };
 		EB729FE72A23AB8700227DB5 /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB729FE62A23AB8600227DB5 /* OnboardingContainerView.swift */; };
+		EB7B71222A5DA65100CE4589 /* ScrollListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7B71212A5DA65100CE4589 /* ScrollListView.swift */; };
 		EBE0D66D2A126DBF0081FCE1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D66C2A126DBF0081FCE1 /* Theme.swift */; };
 		EBE0D66F2A1270BD0081FCE1 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D66E2A1270BD0081FCE1 /* ThemeView.swift */; };
 		EBE0D6712A127B020081FCE1 /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D6702A127B020081FCE1 /* ThemePickerView.swift */; };
@@ -33,9 +35,11 @@
 		EB3520B22A0252F60011350D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB3520B52A0252F60011350D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB3520BD2A0254640011350D /* Example1Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1Timer.swift; sourceTree = "<group>"; };
+		EB50E6A62A4DCDBA008E6FEB /* OpenCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCounter.swift; sourceTree = "<group>"; };
 		EB729FE22A20BD2E00227DB5 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		EB729FE42A22570900227DB5 /* OnboardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
 		EB729FE62A23AB8600227DB5 /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		EB7B71212A5DA65100CE4589 /* ScrollListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollListView.swift; sourceTree = "<group>"; };
 		EBE0D66C2A126DBF0081FCE1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		EBE0D66E2A1270BD0081FCE1 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		EBE0D6702A127B020081FCE1 /* ThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				EBE0D6772A13E2710081FCE1 /* ThemePicker.swift */,
 				EB2EFEA62A28EE14005479F2 /* MaxWidth.swift */,
 				EB2EFEA82A290353005479F2 /* Overlay.swift */,
+				EB50E6A62A4DCDBA008E6FEB /* OpenCounter.swift */,
+				EB7B71212A5DA65100CE4589 /* ScrollListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,8 +190,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB50E6A82A51E2AB008E6FEB /* Assets.xcassets in Resources */,
 				EB3520B62A0252F60011350D /* Preview Assets.xcassets in Resources */,
-				EB3520B32A0252F60011350D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +204,8 @@
 			files = (
 				EB3520BE2A0254640011350D /* Example1Timer.swift in Sources */,
 				EBE0D66D2A126DBF0081FCE1 /* Theme.swift in Sources */,
+				EB50E6A72A4DCDBA008E6FEB /* OpenCounter.swift in Sources */,
+				EB7B71222A5DA65100CE4589 /* ScrollListView.swift in Sources */,
 				EB729FE32A20BD2E00227DB5 /* Feature.swift in Sources */,
 				EB2EFEA72A28EE14005479F2 /* MaxWidth.swift in Sources */,
 				EB729FE52A22570A00227DB5 /* OnboardingContentView.swift in Sources */,
@@ -341,6 +349,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Snippets/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = hello;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -370,6 +379,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Snippets/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = hello;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

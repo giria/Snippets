@@ -6,9 +6,17 @@
 import SwiftUI
 
 let features = [
-    Feature(title: "You are in command", subtitle: "We don't disturb you with ads. We don't collect personal data. We don't ask money for premium features", image: "control"),
-    Feature(title: "Simplicity", subtitle: "Enjoy a simple interface. Our goal is help you to pass the test", image: "simplicity"),
-    Feature(title: "Instant feedback", subtitle: "Not sure if your guess is correct? Get instant access to the valid answer", image: "seaside")
+    Feature(title: "What is the 'Life in UK' test?", subtitle: "Also known as the British Citizenship test, the Life in UK test is used to verify that applicants have the adequate knowledge of British customs, traditions, laws and political system, as required under the UK's immigration rules.", image: "test"),
+    Feature(title: "How to pass?", subtitle: "You will have to answer 24 multiple choice questions about British customs, traditions, laws and the political system. You have to answer at least 18 questions correctly to pass – a pass mark of 75%.", image: "sea"),
+    Feature(title: "It is easy?", subtitle: "Committing 7 or more mistakes in the exam means you would fail. If there are a couple of questions that you aren't sure about, but you are confident of you answers for the rest, then do not panic!", image: "hammock"),
+    Feature(title: "Pass rate", subtitle: "Across the UK, 170,986 tests were taken in 2018/19, with 18 per cent of people failing, or 31,559 in total. ", image: "pass"),
+    
+    Feature(title: "Get the book", subtitle: "Get sure you got the last edition of the **Life in the UK** - last edition is the 2023 edition. You can get the book at the official shop: https://www.officiallifeintheuk.co.uk/shop . After reading the book, practice with our app in order to solidify your knowledge and adquire confidence.", image: "book"),
+    
+    Feature(title: "How much", subtitle: "You need to take the test as part of your application for British citizenship or settlement in the UK. You must book your Life in the UK Test online at least 3 days in advance. It costs £50. There are over 30 test centres in the UK.", image: "control"),
+    
+    Feature(title: "Congrats", subtitle: "If you are practicing **Life in the UK** material you are in the right path to adquire the British citizenship. Congrats on achieving such a significant milestone.",image: "congrats"),
+    
 ]
 
 struct OnboardingContentView: View {
