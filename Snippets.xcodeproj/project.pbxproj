@@ -19,6 +19,7 @@
 		EB729FE52A22570A00227DB5 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB729FE42A22570900227DB5 /* OnboardingContentView.swift */; };
 		EB729FE72A23AB8700227DB5 /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB729FE62A23AB8600227DB5 /* OnboardingContainerView.swift */; };
 		EB7B71222A5DA65100CE4589 /* ScrollListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7B71212A5DA65100CE4589 /* ScrollListView.swift */; };
+		EB96E81F2A7414D900C462B0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB96E81E2A7414D900C462B0 /* SearchView.swift */; };
 		EBE0D66D2A126DBF0081FCE1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D66C2A126DBF0081FCE1 /* Theme.swift */; };
 		EBE0D66F2A1270BD0081FCE1 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D66E2A1270BD0081FCE1 /* ThemeView.swift */; };
 		EBE0D6712A127B020081FCE1 /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D6702A127B020081FCE1 /* ThemePickerView.swift */; };
@@ -40,6 +41,7 @@
 		EB729FE42A22570900227DB5 /* OnboardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
 		EB729FE62A23AB8600227DB5 /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
 		EB7B71212A5DA65100CE4589 /* ScrollListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollListView.swift; sourceTree = "<group>"; };
+		EB96E81E2A7414D900C462B0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		EBE0D66C2A126DBF0081FCE1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		EBE0D66E2A1270BD0081FCE1 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		EBE0D6702A127B020081FCE1 /* ThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				EB2EFEA82A290353005479F2 /* Overlay.swift */,
 				EB50E6A62A4DCDBA008E6FEB /* OpenCounter.swift */,
 				EB7B71212A5DA65100CE4589 /* ScrollListView.swift */,
+				EB96E81E2A7414D900C462B0 /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				EBE0D6712A127B020081FCE1 /* ThemePickerView.swift in Sources */,
 				EB3520B12A0252F30011350D /* ContentView.swift in Sources */,
 				EBE0D6782A13E2710081FCE1 /* ThemePicker.swift in Sources */,
+				EB96E81F2A7414D900C462B0 /* SearchView.swift in Sources */,
 				EBE0D66F2A1270BD0081FCE1 /* ThemeView.swift in Sources */,
 				EB2EFEA92A290353005479F2 /* Overlay.swift in Sources */,
 				EB3520AF2A0252F30011350D /* SnippetsApp.swift in Sources */,
