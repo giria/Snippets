@@ -27,9 +27,7 @@ struct ReorderingGrid2: View {
     
     
     let texts: [String] = [
-        """
-        1/1 A short marriage
-
+"""
 Anne was married to Henry VIII for just six months, making it one of the shortest royal marriages in English history.
 
 Their marriage was annulled, ostensibly because it was never consummated. Anne agreed to the annulment, which helped her avoid the tragic fates of some of Henry’s other wives.
@@ -37,10 +35,8 @@ Their marriage was annulled, ostensibly because it was never consummated. Anne a
 After the annulment, Anne was given the title of “the King’s Sister” and enjoyed a friendly relationship with Henry and his children, including attending official functions.
 
 Anne received a generous divorce settlement, including Hever Castle, the childhood home of Henry VIII’s second wife, Anne Boleyn.
-""", """
-
-                         2/2 The portrait
-
+""",
+"""
 The portrait was painted by Hans Holbein, one of the most skilled portraitists of his time.
 The point of the picture was to give Henry as close an idea of the woman's appearance as possible. This would explain the frontal position, in which every detail of the face can be examined.
 So is most likely an accurate portrayal of Anne of Cleves.
@@ -52,15 +48,17 @@ The most repeated version is that Henry's displeasure at finding Anne of Cleves 
 Acccording another version Henry VIII had a habit of dressing as a commoner and traveling around England to have a good time. When Anne of Cleves was traveling to England for the wedding, Henry VIII decided to have a little fun and see her a bit early. Henry VIII managed to wade through the crowd and plant a  kiss on Anne. The soon-to-be Queen revolted in disgust, and that was enough to let Henry VIII know that he was no longer the strapping, handsome man he used to be when he ascended to the throne at age 17. He was now an aging and obese king that was quickly closing in on 50.
 
 
-Belying her appearance, Anne of Cleves was no fool. Despite - or because of - the evident humiliation of the failed marriage she obtained a handsome settlement from Henry and lived in quiet comfort in England until 1555. Henry's two subsequent wives were English.
-""",
-   """
-                 3/3 No heirs
 
+""",
+"""
 Anne of Cleves never had children. She also never remarried after her divorce from Henry VIII. She and Catherine Howard (who was only 18 or 19 when she was killed) were the only two wives of Henry VIII who never had any children.
 
-                ===  🔵  ===
+Belying her appearance, Anne of Cleves was no fool. Despite - or because of - the evident humiliation of the failed marriage she obtained a handsome settlement from Henry and lived in quiet comfort in England until 1555. Henry's two subsequent wives were English.
+
+                                   
 """ ]
+    
+    let headers: [String] = ["A short marriage 1/3","The Portrait 2/3","A handsome settlement 3/3" ]
     
     @State private var jigsawVisible = false
     @State private var buttonShuffleVisible = false
@@ -95,10 +93,12 @@ Anne of Cleves never had children. She also never remarried after her divorce fr
         VStack{
             
             Text("Anne of Cleves, the fourth wife of Henry the VIII")
-                .foregroundColor(.red)
+                .foregroundColor(.black)
                 .bold()
-                .fontWeight(.regular)
-                .kerning(0.4)
+                //.font(.largeTitle)
+                 .font(.system(size: 26, weight: .heavy, design: .default))
+               // .fontWeight(.regular)
+               // .kerning(0.4)
                 .accentColor(.yellow)
             
             
@@ -107,8 +107,8 @@ Anne of Cleves never had children. She also never remarried after her divorce fr
                 Image("Anne/Portrait_Anne")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 300, height: 300, alignment: .topLeading)
-                    .border(.blue)
+                    .frame(width: 300, height: 300, alignment: .center)
+                    //.border(.blue)
                 
                 
                 
@@ -117,12 +117,12 @@ Anne of Cleves never had children. She also never remarried after her divorce fr
                     jigsawVisible = true
                     buttonShuffleVisible = true
                     
-                } label: { Text(" Learn more")
+                } label: { Text(" Start ")
                 }.buttonStyle(.borderedProminent)
             }
             
             
-            LazyVGrid(columns: threeColumnGrid, alignment: .leading, spacing:1, content: {
+            LazyVGrid(columns: threeColumnGrid, alignment: .center, spacing:1, content: {
                 
                 ForEach(imageModels ) {imageModel in
                     
@@ -196,6 +196,7 @@ Anne of Cleves never had children. She also never remarried after her divorce fr
             })
             .padding(30)
             .opacity(jigsawVisible ? 1: 0)
+            .frame( minHeight: 240, alignment: .trailing)
             
             if (buttonShuffleVisible) {
                 Button() {
@@ -207,33 +208,46 @@ Anne of Cleves never had children. She also never remarried after her divorce fr
             }
             
             if ( textIsVisible == true ) {
-                ScrollView (.vertical, showsIndicators: true) {
-                    Text(texts[secretIndex])
-                    
-                    
-                    if (secretIndex < texts.count - 1) {
-                        Button() {
+                
+                GroupBox {
+                    ScrollViewReader { proxy in
+                        ScrollView (.vertical, showsIndicators: true) {
+                            Text(texts[secretIndex])
+                                .id("topText")
                             
-                            secretIndex += 1
                             
-                        } label: { Text(" More secrets, please ! ")
-                        }.buttonStyle(.borderedProminent)
+                            if (secretIndex < texts.count - 1) {
+                                Button() {
+                                    
+                                    secretIndex += 1
+                                    proxy.scrollTo( "topText", anchor: .top)
+                                    
+                                } label: { Text(" More secrets, please ! ")
+                                }.buttonStyle(.borderedProminent)
+                            }
+                           
+                            if (secretIndex == texts.count - 1) {
+                                Text(Image(systemName: "building.columns"))
+                                    .font(.title)
+                                    .foregroundColor(.black)
+                            }
+                            
+                        }.frame( maxWidth: .infinity)
+                            .padding()
+                           // .onAppear( )
+                        
                     }
                     
-                    
-                }.frame( maxWidth: .infinity)
-                    .padding()
-               
+                } label: {
+                    Label(headers[secretIndex], systemImage: "building.columns")
+                }
             }
-            
-            
-            
             
             
             Spacer()
             
         } .confettiCannon(counter: $counter)
-            .frame( minHeight: 240)
+           
         
         
         
